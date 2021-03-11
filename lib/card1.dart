@@ -18,28 +18,47 @@ class Card1 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               color: Color(0xFFffda82),
+              elevation: 5,
             ),
           ),
-          Row(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: 80,
-                width: 80,
-                margin: EdgeInsets.only(top: 10, left: 10),
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(40),
-                      side: BorderSide(color: Colors.white, width: 2)),
-                  elevation: 5,
-                  color: Color(0xFFffda82),
-                ),
+              Row(
+                children: [
+                  Container(
+                    height: 80,
+                    width: 80,
+                    margin: EdgeInsets.only(top: 10, left: 10),
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40),
+                          side: BorderSide(color: Colors.white, width: 2)),
+                      elevation: 5,
+                      color: Color(0xFFffda82),
+                      child: Center(
+                        child: Text(
+                          "2",
+                          style: TextStyle(color: Colors.white, fontSize: 30),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    margin: EdgeInsets.only(right: 25),
+                    child: Text(
+                      "S",
+                      style: TextStyle(color: Colors.white, fontSize: 35),
+                    ),
+                  )
+                ],
               ),
-              Spacer(),
               Container(
-                margin: EdgeInsets.only(right: 25),
+                margin: EdgeInsets.only(top: 5, left: 20),
                 child: Text(
-                  "S",
-                  style: TextStyle(color: Colors.white, fontSize: 35),
+                  "Black",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               )
             ],
