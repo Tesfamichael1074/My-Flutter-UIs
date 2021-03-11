@@ -37,7 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Card1()],
+          children: <Widget>[
+            TextButton(
+              child: Text("Card 1"),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Card1()));
+              },
+            )
+          ],
         ),
       ),
     );
