@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:sampleUIs/slidderbtn.dart';
 
 import 'card1.dart';
 
@@ -43,6 +44,13 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Card1()));
+              },
+            ),
+            TextButton(
+              child: Text("Slidable Btn"),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SlidderBtn()));
               },
             )
           ],
