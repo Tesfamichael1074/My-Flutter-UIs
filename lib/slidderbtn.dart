@@ -8,7 +8,6 @@ class SlidderBtn extends StatefulWidget {
 
 class _SlidderBtnState extends State<SlidderBtn> {
   TextEditingController textController1 = TextEditingController();
-
   TextEditingController textController2 = TextEditingController();
 
   @override
