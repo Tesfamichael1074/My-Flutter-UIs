@@ -1,3 +1,8 @@
+/*
+All the credit goes to the designer Fitsum Tesfaye who designed this card in Adobe XD, 
+you can find him here https://github.com/fitse-yotor 
+*/
+
 import 'package:flutter/material.dart';
 
 class Card1 extends StatelessWidget {
